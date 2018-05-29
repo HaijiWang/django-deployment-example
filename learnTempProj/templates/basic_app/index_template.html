@@ -1,0 +1,10 @@
+<!DOCTYPE html>
+{% extends "basic_app/base_template.html"%}
+{% load my_extra_temps%}
+{%block body_block%}
+    <h1>Welcom to index</h1>
+    <h1>
+    {{text|cutout:'world'}}
+    {{number|add:"99"}}
+    </h1>
+{% endblock %}
